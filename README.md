@@ -5,10 +5,11 @@ I'm Dhanush Kovi, an undergraduate student who is enthusiastic about open source
 
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Skills.png" alt="Skills" width="30"/> Skills
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Lovely.png" alt="Collaborate" width="30"/> Do you collaborate?
 Yes. I'd love to collaborate more in projects <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Me.png" alt="Me" width="27"/> in which I would learn something new. I'm also 
