@@ -16,7 +16,7 @@ Yes. I'd love to collaborate more in projects <img src="https://raw.githubuserco
 exploring projects on technologies that I'm currently learning, so as to improve my experience <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Clock.png" alt="Learn" width="27"/>.
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Hourglass.png" alt="Status" width="30"/> Current Github Status
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=radical)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=algolia)
 <!--- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=radical) --->
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Party.png" alt="Social" width="30"/> Social
