@@ -5,7 +5,9 @@ I'm Dhanush Kovi, an undergraduate student who is enthusiastic about open source
 
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Skills.png" alt="Skills" width="30"/> Skills
+![CSS](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
@@ -16,8 +18,8 @@ Yes. I'd love to collaborate more in projects <img src="https://raw.githubuserco
 exploring projects on technologies that I'm currently learning, so as to improve my experience <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Clock.png" alt="Learn" width="27"/>.
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Hourglass.png" alt="Status" width="30"/> Current Github Status
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=algolia)
-<!--- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=radical) --->
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=radical)
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Party.png" alt="Social" width="30"/> Social
 [![Keybase](https://img.shields.io/badge/Keybase-0A0A0A?style=for-the-badge&logo=keybase&logoColor=white)](https://keybase.io/dkvc/)
