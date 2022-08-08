@@ -13,10 +13,6 @@ I'm Dhanush Kovi, an undergraduate student who is enthusiastic about open source
 ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Lovely.png" alt="Collaborate" width="30"/> Do you collaborate?
-Yes. I'd love to collaborate more in projects <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Me.png" alt="Me" width="27"/> in which I would learn something new. I'm also 
-exploring projects on technologies that I'm currently learning, so as to improve my experience <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Clock.png" alt="Learn" width="27"/>.
-
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Hourglass.png" alt="Status" width="30"/> Current Github Status
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=radical)
