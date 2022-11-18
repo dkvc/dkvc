@@ -10,6 +10,8 @@ I'm Dhanush Kovi, an undergraduate student who is enthusiastic about open source
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Podman](https://img.shields.io/badge/podman-%23EFFFed.svg?style=for-the-badge&logoColor=black)
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Hourglass.png" alt="Status" width="30"/> Current Github Status
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=radical)
