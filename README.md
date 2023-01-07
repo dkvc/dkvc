@@ -22,7 +22,7 @@ I'm Dhanush Kovi, an undergraduate student who is enthusiastic about open source
 [![Keybase](https://img.shields.io/badge/Keybase-0A0A0A?style=for-the-badge&logo=keybase&logoColor=white)](https://keybase.io/dkvc/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/dkvc/)
 [![Mastodon](https://img.shields.io/badge/-MASTODON-%232B90D9?style=for-the-badge&logo=mastodon&logoColor=white)](https://floss.social/web/@dkvc)
-[![Quay](https://img.shields.io/badge/quay-%23F34F00.svg?style=for-the-badge&logoColor=red)](https://quay.io/repository/dkvc/)<br>
+[![Quay](https://img.shields.io/badge/quay-%23F34F00.svg?style=for-the-badge&logoColor=red)](https://quay.io/user/dkvc/)<br>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/dkvc/dkvc?label=last%20modified)
 ![Views](https://komarev.com/ghpvc/?username=dkvc&label=Views)
