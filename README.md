@@ -1,7 +1,7 @@
 # <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Hi.png" alt="Hi" width="35"/> Hi, I'm Dhanush Kovi (dkvc)
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/About.png" alt="About" width="30"/> About Myself
-I'm Dhanush Kovi, an undergraduate student who is enthusiastic about open source software & passionate about everything. <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Rocket.png" alt="Passionate" width="25"/>
+I'm Dhanush Kovi, an undergraduate student who is enthusiastic about open source software & curious about everything. <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Rocket.png" alt="Passionate" width="25"/>
 
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Skills.png" alt="Skills" width="30"/> Working On
