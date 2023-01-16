@@ -14,10 +14,10 @@ I'm Dhanush Kovi, an undergraduate student who is enthusiastic about open source
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Hourglass.png" alt="Status" width="30"/> Current Github Status
-[![GitHub stats (Dark Mode)](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=algolia#gh-dark-mode-only)](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=algolia#gh-dark-mode-only)
-[![GitHub stats (Light Mode)](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=buefy#gh-light-mode-only)](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=buefy#gh-light-mode-only)
-[![Top Langs (Dark Mode)](https://github-readme-stats.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=algolia#gh-dark-mode-only)](https://github-readme-stats.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=algolia#gh-dark-mode-only)
-[![Top Langs (Light Mode)](https://github-readme-stats.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=buefy#gh-light-mode-only)](https://github-readme-stats.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=buefy#gh-light-mode-only)
+[![GitHub stats (Dark Mode)](https://github-readme-stats-ruby-one.vercel.app/api?username=dkvc&show_icons=true&theme=algolia#gh-dark-mode-only)](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=algolia#gh-dark-mode-only)
+[![GitHub stats (Light Mode)](https://github-readme-stats-ruby-one.vercel.app/api?username=dkvc&show_icons=true&theme=buefy#gh-light-mode-only)](https://github-readme-stats.vercel.app/api?username=dkvc&show_icons=true&theme=buefy#gh-light-mode-only)
+[![Top Langs (Dark Mode)](https://github-readme-stats-ruby-one.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=algolia#gh-dark-mode-only)](https://github-readme-stats.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=algolia#gh-dark-mode-only)
+[![Top Langs (Light Mode)](https://github-readme-stats-ruby-one.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=buefy#gh-light-mode-only)](https://github-readme-stats.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=buefy#gh-light-mode-only)
 
 ## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Party.png" alt="Social" width="30"/> Social
 [![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/dkvc)
