@@ -1,4 +1,4 @@
-## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Skills.png" alt="(Skills)" width="30"/> Working On
+## <img src="https://cdn.statically.io/gh/dkvc/dkvc/main/assets/Skills.png" alt="(Skills)" width="30"/> Working On
 ![CSS](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
@@ -7,13 +7,13 @@
 ![Podman](https://img.shields.io/badge/podman-%23EFFFed.svg?style=for-the-badge&logoColor=black)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Hourglass.png" alt="(Status)" width="30"/> Current Github Status
+## <img src="https://cdn.statically.io/gh/dkvc/dkvc/main/assets/Hourglass.png" alt="(Status)" width="30"/> Current Github Status
 [![GitHub stats (Dark Mode)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=algolia#gh-dark-mode-only)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=algolia#gh-dark-mode-only)
 [![GitHub stats (Light Mode)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=buefy#gh-light-mode-only)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=buefy#gh-light-mode-only)
 [![Top Langs (Dark Mode)](https://github-readme-stats-dkvc23.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=algolia#gh-dark-mode-only)](https://github-readme-stats-dkvc23.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=algolia#gh-dark-mode-only)
 [![Top Langs (Light Mode)](https://github-readme-stats-dkvc23.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=buefy#gh-light-mode-only)](https://github-readme-stats-dkvc23.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=buefy#gh-light-mode-only)
 
-## <img src="https://raw.githubusercontent.com/dkvc/dkvc/main/assets/Party.png" alt="(Social)" width="30"/> Social
+## <img src="https://cdn.statically.io/gh/dkvc/dkvc/main/assets/Party.png" alt="(Social)" width="30"/> Social
 [![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/dkvc)
 [![Keybase](https://img.shields.io/badge/Keybase-0A0A0A?style=for-the-badge&logo=keybase&logoColor=white)](https://keybase.io/dkvc/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/dkvc/)
