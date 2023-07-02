@@ -28,3 +28,5 @@
 ![Views](https://komarev.com/ghpvc/?username=dkvc&label=Views)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 [![Back](https://camo.githubusercontent.com/597cd6b445019ef1f929198e9bd18e1b5c13e33cc59513c731b46b8dc112ada1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6261636b253230746f253230746f702d2545322538362541392d626c7565)](https://github.com/dkvc)
+
+<h3>[This profile info is not updated and may not reflect the current stats]</h3>
