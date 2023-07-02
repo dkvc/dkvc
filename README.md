@@ -11,8 +11,8 @@
 
 ## <img src="https://cdn.statically.io/gh/dkvc/dkvc/main/assets/Hourglass.png" alt="(Status)" width="30"/> Current Github Status
 
-[![GitHub stats (Dark Mode)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=algolia#gh-dark-mode-only)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=algolia#gh-dark-mode-only)
-[![GitHub stats (Light Mode)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=buefy#gh-light-mode-only)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=buefy#gh-light-mode-only)
+[![GitHub stats (Dark Mode)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=algolia#gh-dark-mode-only)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=algolia&hide_rank=true#gh-dark-mode-only)
+[![GitHub stats (Light Mode)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=buefy#gh-light-mode-only)](https://github-readme-stats-dkvc23.vercel.app/api?username=dkvc&show_icons=true&theme=buefy&hide_rank=true#gh-light-mode-only)
 [![Top Langs (Dark Mode)](https://github-readme-stats-dkvc23.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=algolia#gh-dark-mode-only)](https://github-readme-stats-dkvc23.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=algolia#gh-dark-mode-only)
 [![Top Langs (Light Mode)](https://github-readme-stats-dkvc23.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=buefy#gh-light-mode-only)](https://github-readme-stats-dkvc23.vercel.app/api/top-langs/?username=dkvc&layout=compact&theme=buefy#gh-light-mode-only)
 
