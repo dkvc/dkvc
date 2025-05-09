@@ -144,7 +144,7 @@ const getBadgeColor = (typeStr: string): string => {
   box-shadow: 0 0 0.5rem hsla(0, 0%, 0%, 0.3);
 
   /* background-color is set via script */
-  border: 3px solid hsl(223.45, 42.03%, 13.53%);
+  border: 0.188rem solid hsl(223.45, 42.03%, 13.53%);
   border-radius: 50%;
   width: 1.125rem;
   height: 1.125rem;
