@@ -173,12 +173,10 @@ const getBadgeColor = (typeStr: string): string => {
 /* TODO: Fix dot width in base.css */
 .timeline-item:nth-child(odd) .timeline-dot {
   right: calc(-1.125rem / 2);
-  transform: translateX(50%);
 }
 
 .timeline-item:nth-child(even) .timeline-dot {
   left: calc(-1.125rem / 2);
-  transform: translateX(-50%);
 }
 
 /* Content Card */
