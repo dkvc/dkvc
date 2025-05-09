@@ -1,0 +1,53 @@
+/* Include custom fonts */
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Melon Camp'),
+    url('./fonts/melon_camp/Melon Camp.otf') format('opentype'),
+    url('./fonts/melon_camp/Melon Camp.ttf') format('truetype');
+  font-family: 'Melon Camp';
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Fresh Spring'),
+    url('./fonts/fresh_spring/FreshSpring.otf') format('opentype');
+  font-family: 'Fresh Spring';
+}
+
+/* CSS Variables */
+:root {
+  --bg-linear-gradient-start: hsl(225, 59.26%, 10.59%);
+  --bg-linear-gradient-mid: hsl(225.41, 39.78%, 18.24%);
+  --bg-linear-gradient-end: hsl(213.06, 29.7%, 32.35%);
+
+  --text-color: hsl(0, 0%, 94.12%);
+  --header-title-and-hover-color: hsl(213.82, 30.05%, 64.12%);
+  --header-text-color: hsl(0, 0%, 91.76%);
+}
+
+/* Basic Reset & Body Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
