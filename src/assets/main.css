@@ -19,3 +19,18 @@ body {
     Arial,
     sans-serif;
 }
+
+@media (prefers-reduced-motion) {
+  *,
+  *::before,
+  *::after {
+    /* Effectively disable by making duration tiny */
+    animation-duration: 0.01ms !important;
+    /* Play only once (tiny duration) */
+    animation-iteration-count: 1 !important;
+    /* Effectively disable transitions */
+    transition-duration: 0.01ms !important;
+    /* Disable smooth scrolling */
+    scroll-behavior: auto !important;
+  }
+}
