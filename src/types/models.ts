@@ -11,4 +11,19 @@ export interface TimelineItemData {
   link?: string
 }
 
+export interface EducationItemData {
+  id: string
+  degree?: string
+  institution: string
+  date: string
+  location: string
+  points: string[]
+}
+
+export interface ContactItemData {
+  id: string
+  name: string
+  link: string
+  display_type?: 'link' | 'text'
+  iconClass?: string
 }
