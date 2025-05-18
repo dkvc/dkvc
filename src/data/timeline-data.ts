@@ -79,7 +79,7 @@ export const timelineData: TimelineItemData[] = [
     month_year: 'October 2024',
     project_name: 'Warfarin Dosage Prediction using Ensemble Sampling',
     description:
-      'Improved prediction time of Warfarin Dosage by ensemble of models compared to other sampling methods on large datasets',
+      'Improved prediction time of Warfarin Dosage by using ensemble of models compared to other sampling methods on large datasets',
     tags: ['Python', 'Pytorch', 'Data Analysis'],
     additional_tags: ['Git'],
     link: 'https://github.com/dkvc/Ensemble_Warfarin',
@@ -165,7 +165,7 @@ export const timelineData: TimelineItemData[] = [
     project_type: ['Data-Viz', 'Web', 'Tool'],
     month_year: 'November 2022',
     project_name: 'Conversation Flow Analyzer',
-    description: 'A web app to analyzes chat app data and provides its data insights',
+    description: 'A web app to analyze chat app data and provides its data insights',
     tags: ['Python', 'CI/CD', 'Streamlit', 'Data Analysis'],
     additional_tags: ['Git'],
     private: true,
