@@ -69,13 +69,30 @@ const getBadgeColor = (typeStr: string): string => {
   const typeKey = typeStr.toLowerCase().replace(/\s+/g, '-')
   return typeColors[typeKey] || typeColors.default
 }
+
+/* Clickability */
+const isClickable = computed(() => !!props.item.link)
+const contentWrapperTag = computed(() => {
+  return isClickable.value ? 'a' : 'div'
+})
+const contentWrapperExtraProps = computed(() => {
+  if (isClickable.value) {
+    return {
+      href: props.item.link,
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    }
+  }
+
+  return {}
+})
 </script>
 
 <template>
   <div ref="timelineItemRef" class="timeline-item" :class="itemClasses">
     <div class="timeline-dot" :style="dotStyle"></div>
 
-    <div class="timeline-content">
+    <component :is="contentWrapperTag" class="timeline-content" v-bind="contentWrapperExtraProps">
       <div class="timeline-meta-top">
         <div class="project-types-container">
           <span
@@ -90,7 +107,16 @@ const getBadgeColor = (typeStr: string): string => {
         <span class="timeline-date">{{ item.month_year || 'Date TBD' }}</span>
       </div>
 
-      <h3 class="timeline-title">{{ item.project_name || 'Untitled Project' }}</h3>
+      <h3 class="timeline-title">
+        {{ item.project_name || 'Untitled Project' }}
+        <span
+          v-if="item.private"
+          class="fa fa-lock timeline-title-icon"
+          aria-label="Private project"
+          title="Private project"
+          :style="{ color: primaryColor }"
+        ></span>
+      </h3>
 
       <p class="timeline-description">{{ item.description || 'No description available.' }}</p>
       <div v-if="item.tags && item.tags.length > 0" class="timeline-tags">
@@ -98,7 +124,7 @@ const getBadgeColor = (typeStr: string): string => {
           {{ tagText }}
         </span>
       </div>
-    </div>
+    </component>
   </div>
 </template>
 
@@ -202,6 +228,18 @@ const getBadgeColor = (typeStr: string): string => {
   padding: 1.25rem 1.563rem;
 }
 
+a.timeline-content {
+  display: block;
+  color: inherit;
+}
+
+.timeline-title-icon {
+  vertical-align: middle;
+  margin-left: 0.35em;
+  font-size: 0.8em;
+  /* color is set via inline style to match primaryColor */
+}
+
 /* Initial clip-path for left items (odd) - reveal from right to left */
 .timeline-item:nth-child(odd) .timeline-content {
   clip-path: inset(0 0 0 100%);
@@ -288,6 +326,8 @@ const getBadgeColor = (typeStr: string): string => {
   margin-bottom: 0.5rem;
   font-weight: 500;
   font-size: 1.3em;
+  line-height: 1.25em;
+  /* Color is dynamically adjusted if project.link exists */
 }
 
 .timeline-description {
