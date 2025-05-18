@@ -1,45 +1,15 @@
-# dkvc
+# dkvc.org
 
-This template should help get you started developing with Vue 3 in Vite.
+This repository contains the source code for `dkvc.org`.
 
-## Recommended IDE Setup
+## License
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+The content of this repository is subject to a dual licensing model:
 
-## Type Support for `.vue` Imports in TS
+1.  **Source Code:**
+    All source code files (e.g., `.js`, `.vue`, `.ts`, `.html`, `.css`, `.scss`, configuration files like `vite.config.js`, etc.) are licensed under the **MIT License**. A copy of the MIT License can be found in the `LICENSE.md` file.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+2.  **Image and Creative Assets:**
+    All original image files (e.g., `*.png`, `*.jpg`, `*.jpeg`, `*.gif`, `*.svg` primarily located in `public/`) and other non-code creative assets created by me (Dhanush Kovi) are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-pnpm test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+    You can view a summary of this license here: [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
