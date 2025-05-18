@@ -2,6 +2,34 @@
 import { RouterView } from 'vue-router'
 import SiteHeader from './components/layout/SiteHeader.vue'
 import SiteFooter from './components/layout/SiteFooter.vue'
+import { onMounted, onUnmounted, ref } from 'vue'
+
+// Track reduced motion preference
+const prefersReducedMotion = ref(false)
+let mediaQueryList: MediaQueryList | null = null
+
+const updateReducedMotionPreference = (event?: MediaQueryListEvent) => {
+  if (event) {
+    prefersReducedMotion.value = event.matches
+  } else if (mediaQueryList) {
+    prefersReducedMotion.value = mediaQueryList.matches
+  }
+  console.log('Prefers reduced motion:', prefersReducedMotion.value)
+}
+
+onMounted(() => {
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    mediaQueryList = window.matchMedia('(prefers-reduced-motion: reduce)')
+    updateReducedMotionPreference() // Set initial value
+    mediaQueryList.addEventListener('change', updateReducedMotionPreference)
+  }
+})
+
+onUnmounted(() => {
+  if (mediaQueryList) {
+    mediaQueryList.removeEventListener('change', updateReducedMotionPreference)
+  }
+})
 </script>
 
 <template>
