@@ -109,23 +109,29 @@ const props = defineProps<{
 @media (max-width: 768px) {
   .about-card-content {
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.75rem;
   }
 
   .profile-photo {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   .name {
-    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
   }
 
   .title {
-    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
   }
 
   .bio {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 }
 </style>
