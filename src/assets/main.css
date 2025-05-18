@@ -11,7 +11,7 @@ body {
     var(--bg-linear-gradient-mid) 50%,
     var(--bg-linear-gradient-end) 100%
   );
-  padding-bottom: 9.375rem;
+  padding-bottom: 1rem;
   min-height: 100vh;
   color: var(--text-color);
   font-family:
