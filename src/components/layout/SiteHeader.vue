@@ -284,9 +284,9 @@ function closeNav() {
     z-index: 1000; /* Below toggle */
     backdrop-filter: blur(50px);
     transition:
-      opacity 0.3s ease,
-      visibility 0.3s ease,
-      transform 0.3s ease-in-out;
+      opacity 0.5s ease,
+      visibility 0.5s ease,
+      transform 0.5s ease-in-out;
     margin-bottom: 1em;
     /* TODO: move hsl/hsla to base.css */
     box-shadow: 0 0.25rem 0.75rem hsla(0, 0%, 0%, 0.25);
