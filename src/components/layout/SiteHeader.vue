@@ -275,7 +275,7 @@ function closeNav() {
     top: 0;
     left: 0;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     transform: translateY(-100%); /* we can also do translateX(100%) to slide from right */
     visibility: hidden;
@@ -287,14 +287,15 @@ function closeNav() {
       opacity 0.3s ease,
       visibility 0.3s ease,
       transform 0.3s ease-in-out;
+    margin-bottom: 1em;
     /* TODO: move hsl/hsla to base.css */
     box-shadow: 0 0.25rem 0.75rem hsla(0, 0%, 0%, 0.25);
     border-bottom-right-radius: 5%;
     border-bottom-left-radius: 5%;
     background-color: var(--mobile-nav-background);
-    padding-top: 60px;
+    padding-top: 2em;
     width: 100%;
-    height: 40%;
+    height: 50%;
   }
 
   .main-nav.nav-open {
@@ -304,9 +305,65 @@ function closeNav() {
   }
 
   .main-nav ul {
+    display: flex;
     flex-direction: column;
-    gap: 2rem; /* More spacing for touch */
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
     text-align: center;
+  }
+
+  .main-nav ul li {
+    width: 85%;
+    max-width: 320px;
+  }
+
+  .main-nav ul li a {
+    display: block; /* make whole area tappable */
+    transition:
+      background-color 0.2s ease-out,
+      color 0.2s ease-out,
+      border-color 0.2s ease-out;
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  /* remove underline effect for mobile nav items */
+  .main-nav ul li a::after {
+    display: none;
+  }
+
+  .main-nav ul li a {
+    display: block;
+    transition:
+      background-color 0.2s ease-out,
+      color 0.2s ease-out,
+      border-color 0.2s ease-out;
+    border: 2px solid transparent;
+    border-radius: 30px; /* pill shape */
+    padding: 0.7em 1.5em; /* pill shape  */
+    color: var(--mobile-nav-text-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .main-nav ul li a:hover,
+  .main-nav ul li a:active {
+    border-color: var(--header-title-and-hover-color);
+    color: var(--header-title-and-hover-color);
+  }
+
+  .main-nav ul li a.router-link-exact-active {
+    border-color: var(--header-title-and-hover-color);
+    background-color: hsl(224, 38%, 19%);
+    font-weight: 600;
   }
 }
 </style>
