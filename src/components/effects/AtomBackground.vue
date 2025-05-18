@@ -206,7 +206,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <canvas ref="atomCanvasRef" class="atom-background-canvas"></canvas>
+  <canvas ref="atomCanvasRef" class="atom-background-canvas" aria-hidden="true"></canvas>
 </template>
 
 <style scoped>
