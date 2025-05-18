@@ -40,7 +40,6 @@ const getBadgeColor = (typeStr: string): string => {
               <span
                 v-if="project.private"
                 class="fa fa-lock project-card-lock-icon"
-                aria-label="Private project"
                 title="Private project"
               ></span>
             </h5>

@@ -112,7 +112,6 @@ const contentWrapperExtraProps = computed(() => {
         <span
           v-if="item.private"
           class="fa fa-lock timeline-title-icon"
-          aria-label="Private project"
           title="Private project"
           :style="{ color: primaryColor }"
         ></span>
