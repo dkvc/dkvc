@@ -382,4 +382,61 @@ a.timeline-content {
   /* TODO: hsl/hsla */
   box-shadow: 0 0.5rem 1.125rem hsla(0, 0%, 0%, 0.3);
 }
+
+/* Small screens */
+@media (max-width: 768px) {
+  /* Timeline Item General Mobile Layout */
+  .timeline-item {
+    left: 0 !important;
+    margin-bottom: 2.5rem;
+    padding-right: 1rem;
+    padding-left: 2.5rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Fix odd cards */
+  .timeline-item:nth-child(odd) {
+    left: 50%;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  /* Explicit Padding Overrides for Odd/Even Items */
+  .timeline-item:nth-child(odd) {
+    padding-right: 1rem !important;
+    padding-left: 2.5rem !important;
+  }
+  .timeline-item:nth-child(even) {
+    padding-right: 1rem !important;
+    padding-left: 2.5rem !important;
+  }
+
+  /* Dot Positioning for All Items */
+  .timeline-item:nth-child(odd) .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    right: auto;
+    left: 0.5rem;
+  }
+
+  /* Meta and Tags Alignment */
+  .timeline-meta-top {
+    justify-content: flex-start;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-tags,
+  .timeline-item:nth-child(even) .timeline-tags {
+    justify-content: flex-start;
+  }
+
+  /* Font Size Adjustments */
+  .timeline-title {
+    font-size: 1.2em;
+  }
+
+  .timeline-description {
+    font-size: 0.9em;
+    line-height: 1.55;
+  }
+}
 </style>

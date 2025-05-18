@@ -53,4 +53,10 @@ defineProps<{
   height: 100%;
   content: '';
 }
+
+@media (max-width: 768px) {
+  .timeline-container::before {
+    left: 1rem;
+  }
+}
 </style>
