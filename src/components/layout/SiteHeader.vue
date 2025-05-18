@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 
 const isNavOpen = ref(false)
+const menuToggleRef = ref<HTMLButtonElement | null>(null)
 
 function toggleNav() {
   isNavOpen.value = !isNavOpen.value
@@ -24,25 +25,53 @@ function closeNav() {
 
       <!-- Nav Menu (Small) -->
       <button
+        ref="menuToggleRef"
         class="menu-toggle"
-        id="menu-toggle"
+        :class="{ 'is-active': isNavOpen }"
         aria-label="Toggle navigation"
         :aria-expanded="isNavOpen"
         aria-controls="mainNav"
         @click="toggleNav"
       >
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
       </button>
 
       <!-- Nav Menu (Large) -->
       <nav class="main-nav" id="mainNav" :class="{ 'nav-open': isNavOpen }">
         <ul>
           <li><RouterLink to="/" @click="closeNav">Home</RouterLink></li>
-          <li><RouterLink to="/education" @click="closeNav">Education</RouterLink></li>
           <li><RouterLink to="/projects" @click="closeNav">Projects</RouterLink></li>
-          <li><RouterLink to="/contact" @click="closeNav">Contact</RouterLink></li>
+          <li><RouterLink to="/education" @click="closeNav">Education</RouterLink></li>
+          <li>
+            <a
+              href="https://github.com/dkvc"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="external-link"
+            >
+              GitHub
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="external-link-icon"
+                aria-hidden="true"
+              >
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span class="sr-only">(opens in new window)</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -92,6 +121,7 @@ function closeNav() {
 /* Nav Menu (Large) */
 .main-nav ul {
   display: flex;
+  align-items: center;
   gap: 1.5625rem;
 }
 
@@ -134,13 +164,149 @@ function closeNav() {
   color: var(--header-title-and-hover-color);
 }
 
+.sr-only {
+  display: none;
+}
+
 /* Nav Menu (Small) */
 .menu-toggle {
   display: none; /* Hidden on larger screens */
+  position: relative;
   z-index: 110; /* Above mobile nav */
+
+  transition-duration: 0.15s;
+  transition-property: opacity, filter;
+  transition-timing-function: linear;
+
   cursor: pointer;
   border: none;
   background: none;
-  padding: 10px;
+  padding: 15px;
+  overflow: visible;
+}
+
+.hamburger-box {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 24px;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; /* Half of its height */
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  position: absolute;
+  transition-duration: 0.15s;
+  transition-property: transform;
+  transition-timing-function: ease;
+  border-radius: 4px;
+  background-color: var(--header-text-color);
+  width: 30px;
+  height: 3px;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  display: block;
+  content: '';
+}
+.hamburger-inner::before {
+  top: -10px; /* Spacing from middle line */
+}
+.hamburger-inner::after {
+  bottom: -10px; /* Spacing from middle line */
+}
+
+/* Hamburger Animation to X */
+.menu-toggle.is-active .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: var(--header-text-color); /* Ensure color consistency */
+}
+.menu-toggle.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(-90deg);
+  transition:
+    top 0.1s ease-out,
+    transform 0.12s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  background-color: var(--header-text-color);
+}
+
+.menu-toggle.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+
+/* Simpler X by rotating top/bottom and hiding middle */
+.menu-toggle.is-active .hamburger-inner {
+  background-color: transparent;
+}
+.menu-toggle.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition:
+    top 0.1s ease-out,
+    transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+}
+.menu-toggle.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .main-nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateY(-100%); /* we can also do translateX(100%) to slide from right */
+    visibility: hidden;
+
+    opacity: 0;
+    z-index: 1000; /* Below toggle */
+    backdrop-filter: blur(50px);
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease,
+      transform 0.3s ease-in-out;
+    /* TODO: move hsl/hsla to base.css */
+    box-shadow: 0 0.25rem 0.75rem hsla(0, 0%, 0%, 0.25);
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    background-color: var(--mobile-nav-background);
+    padding-top: 60px;
+    width: 100%;
+    height: 40%;
+  }
+
+  .main-nav.nav-open {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 2rem; /* More spacing for touch */
+    text-align: center;
+  }
 }
 </style>
