@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AtomBackground from '@/components/effects/AtomBackground.vue'
 import { RouterView } from 'vue-router'
 import SiteHeader from './components/layout/SiteHeader.vue'
 import SiteFooter from './components/layout/SiteFooter.vue'
