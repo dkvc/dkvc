@@ -5,6 +5,7 @@ import SiteFooter from './components/layout/SiteFooter.vue'
 </script>
 
 <template>
+  <AtomBackground v-if="!prefersReducedMotion" />
   <SiteHeader />
 
   <RouterView v-slot="{ Component }">
