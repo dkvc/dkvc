@@ -385,9 +385,14 @@ a.timeline-content {
 
 /* Small screens */
 @media (max-width: 768px) {
-  /* Timeline Item General Mobile Layout */
   .timeline-item {
     left: 0 !important;
+
+    /* Remove all transitions for mobile and set final states */
+    transform: translateY(0);
+    opacity: 1;
+    transition: none;
+
     margin-bottom: 2.5rem;
     padding-right: 1rem;
     padding-left: 2.5rem;
@@ -402,7 +407,6 @@ a.timeline-content {
     text-align: left;
   }
 
-  /* Explicit Padding Overrides for Odd/Even Items */
   .timeline-item:nth-child(odd) {
     padding-right: 1rem !important;
     padding-left: 2.5rem !important;
@@ -412,14 +416,27 @@ a.timeline-content {
     padding-left: 2.5rem !important;
   }
 
-  /* Dot Positioning for All Items */
+  .timeline-content {
+    transform: translateY(0);
+    opacity: 1;
+    transition:
+      transform 0.3s ease-out,
+      border-top-color 0.4s ease,
+      box-shadow 0.3s ease;
+  }
+
+  /* the card is not clipped initially, remove the clip-path animation */
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    clip-path: none;
+  }
+
   .timeline-item:nth-child(odd) .timeline-dot,
   .timeline-item:nth-child(even) .timeline-dot {
     right: auto;
     left: 0.5rem;
   }
 
-  /* Meta and Tags Alignment */
   .timeline-meta-top {
     justify-content: flex-start;
   }
@@ -429,7 +446,6 @@ a.timeline-content {
     justify-content: flex-start;
   }
 
-  /* Font Size Adjustments */
   .timeline-title {
     font-size: 1.2em;
   }

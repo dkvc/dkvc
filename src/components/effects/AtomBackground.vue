@@ -4,7 +4,7 @@ import type { Atom } from '@/types/atom-effects'
 
 /* Fixed Default Configuration. TODO: Make it configurable */
 const DESKTOP_NUM_ATOMS = 60
-const MOBILE_NUM_ATOMS = 30
+const MOBILE_NUM_ATOMS = 20
 const MOBILE_BREAKPOINT = 768
 
 const isMobileScreen = ref(false)
