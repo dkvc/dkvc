@@ -262,16 +262,16 @@ a.timeline-content {
 .timeline-item.item-type-ai .timeline-content {
   border-top-color: hsl(122.42, 39.44%, 49.22%);
 }
-.timeline-item.item-type-game-dev .timeline-content {
-  border-top-color: hsl(206.57, 89.74%, 54.12%);
+.timeline-item.item-type-reinforcement-learning .timeline-content {
+  border-top-color: hsl(222, 90%, 54%);
 }
 .timeline-item.item-type-web .timeline-content {
   border-top-color: hsl(322.02, 100%, 51.37%);
 }
-.timeline-item.item-type-data-viz .timeline-content {
+.timeline-item.item-type-deep-learning .timeline-content {
   border-top-color: hsl(291.24, 63.72%, 42.16%);
 }
-.timeline-item.item-type-mobile .timeline-content {
+.timeline-item.item-type-optimization .timeline-content {
   border-top-color: hsl(14.39, 100%, 56.67%);
 }
 .timeline-item.item-type-default .timeline-content {
@@ -279,6 +279,15 @@ a.timeline-content {
 }
 .timeline-item.item-type-misc .timeline-content {
   border-top-color: hsl(213.82, 30.05%, 64.12%);
+}
+.timeline-item.item-type-devops .timeline-content {
+  border-top-color: hsl(4 100% 36.2%);
+}
+.timeline-item.item-type-tool .timeline-content {
+  border-top-color: hsl(183 100% 36%);
+}
+.timeline-item.item-type-data-viz .timeline-content {
+  border-top-color: hsl(165 100% 35.6%);
 }
 
 /* Styling for Elements within Card */
