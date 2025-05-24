@@ -46,12 +46,12 @@ function closeNav() {
           <li><RouterLink to="/education" @click="closeNav">Education</RouterLink></li>
           <li>
             <a
-              href="https://github.com/dkvc"
+              href="/Dhanush_Kovi_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               class="external-link"
             >
-              GitHub
+              CV
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
