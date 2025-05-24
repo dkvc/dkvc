@@ -25,7 +25,7 @@ export const timelineData: TimelineItemData[] = [
     description: 'Automatically download images and creates a PDF from a given Ifpshare URL',
     tags: ['Vue', 'UI/UX', 'Typescript', 'Mobile-first', 'Cloudflare Workers'],
     additional_tags: ['HTML', 'CSS', 'Git', 'Javascript'],
-    link: 'https://dhatri.dkvc.org',
+    link: 'https://ifpsharedown.dkvc.org',
   },
   {
     id: '3',
