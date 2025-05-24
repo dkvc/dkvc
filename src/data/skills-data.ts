@@ -10,7 +10,17 @@ export const skillsData: SkillCategory[] = [
   },
   {
     name: 'Frameworks & Libraries',
-    skills: ['Pytorch', 'Vue', 'JAX', 'FastAPI', 'Flask', 'Three.js', 'Node.js', 'ASP.NET'],
+    skills: [
+      'Pytorch',
+      'Vue',
+      'JAX',
+      'Langchain',
+      'FastAPI',
+      'Flask',
+      'Three.js',
+      'Node.js',
+      'ASP.NET',
+    ],
   },
   {
     name: 'Databases',
