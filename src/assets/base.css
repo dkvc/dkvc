@@ -4,8 +4,10 @@
   font-weight: normal;
   src:
     local('Melon Camp'),
-    url('./fonts/melon_camp/Melon Camp.otf') format('opentype'),
-    url('./fonts/melon_camp/Melon Camp.ttf') format('truetype');
+    url('./fonts/melon_camp/MelonCamp.woff2') format('woff2'),
+    url('./fonts/melon_camp/MelonCamp.woff') format('woff'),
+    url('./fonts/melon_camp/MelonCamp.otf') format('opentype'),
+    url('./fonts/melon_camp/MelonCamp.ttf') format('truetype');
   font-family: 'Melon Camp';
 }
 
@@ -14,6 +16,7 @@
   font-weight: normal;
   src:
     local('Brittany Charming'),
+    url('./fonts/brittany_charming/BrittanyCharming.woff2') format('woff2'),
     url('./fonts/brittany_charming/BrittanyCharming.otf') format('opentype');
   font-family: 'Brittany Charming';
 }
