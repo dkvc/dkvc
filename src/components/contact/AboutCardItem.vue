@@ -79,7 +79,7 @@ const props = defineProps<{
 .last-name::first-letter {
   vertical-align: -0.1em;
   font-size: 1.5em;
-  font-family: 'Fresh Spring', cursive;
+  font-family: 'Brittany Charming', cursive;
 }
 
 .title {

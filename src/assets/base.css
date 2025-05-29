@@ -13,9 +13,9 @@
   font-style: normal;
   font-weight: normal;
   src:
-    local('Fresh Spring'),
-    url('./fonts/fresh_spring/FreshSpring.otf') format('opentype');
-  font-family: 'Fresh Spring';
+    local('Brittany Charming'),
+    url('./fonts/brittany_charming/BrittanyCharming.otf') format('opentype');
+  font-family: 'Brittany Charming';
 }
 
 /* CSS Variables */

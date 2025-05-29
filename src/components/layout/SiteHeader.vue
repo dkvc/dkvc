@@ -115,7 +115,7 @@ function closeNav() {
   margin-right: 0.125rem;
   font-size: 1.5em;
   line-height: 0.8;
-  font-family: 'Fresh Spring', cursive;
+  font-family: 'Brittany Charming', cursive;
 }
 
 /* Nav Menu (Large) */
