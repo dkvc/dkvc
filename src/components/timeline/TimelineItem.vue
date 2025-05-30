@@ -111,10 +111,11 @@ const contentWrapperExtraProps = computed(() => {
         {{ item.project_name || 'Untitled Project' }}
         <span
           v-if="item.private"
-          class="fa fa-lock timeline-title-icon"
+          class="material-symbols-outlined timeline-title-icon"
           title="Private project"
           :style="{ color: primaryColor }"
-        ></span>
+          >encrypted</span
+        >
       </h3>
 
       <p class="timeline-description">{{ item.description || 'No description available.' }}</p>
@@ -234,8 +235,7 @@ a.timeline-content {
 
 .timeline-title-icon {
   vertical-align: middle;
-  margin-left: 0.35em;
-  font-size: 0.8em;
+  font-size: 1em;
   /* color is set via inline style to match primaryColor */
 }
 

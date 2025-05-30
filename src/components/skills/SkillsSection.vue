@@ -140,9 +140,10 @@ const getBadgeColor = (typeStr: string): string => {
                         {{ project.project_name }}
                         <span
                           v-if="project.private"
-                          class="fa fa-lock project-card-lock-icon"
+                          class="material-symbols-outlined project-card-lock-icon"
                           title="Private project"
-                        ></span>
+                          >encrypted</span
+                        >
                       </h5>
                       <p
                         v-if="project.description"
@@ -427,7 +428,7 @@ a:hover .project-card-name {
 .project-card-lock-icon {
   margin-left: 0.4em;
   color: var(--text-secondary-color, hsl(222.35, 15.6%, 78.63%));
-  font-size: 0.8em;
+  font-size: 1em;
 }
 .project-card-description {
   display: block;

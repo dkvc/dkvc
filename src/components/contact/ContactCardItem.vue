@@ -14,7 +14,23 @@ defineProps<{
       <ul class="contact-list">
         <li v-for="contact in contacts" :key="contact.id" class="contact-list-item">
           <a :href="contact.link" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <i v-if="contact.iconClass" :class="contact.iconClass" aria-hidden="true"></i>
+            <!-- Material Symbols -->
+            <span
+              v-if="contact.iconType === 'material'"
+              class="material-symbols-outlined contact-icon-item"
+              aria-hidden="true"
+            >
+              {{ contact.iconContent }}
+            </span>
+
+            <!-- SVG Brand Icons (from https://simpleicons.org) -->
+            <img
+              v-else-if="contact.iconType === 'svg'"
+              :src="contact.iconContent"
+              :alt="contact.name + ' icon'"
+              class="contact-icon-item contact-brand-icon"
+              aria-hidden="true"
+            />
             <span class="contact-name">{{ contact.name }}</span>
           </a>
         </li>
@@ -60,5 +76,15 @@ defineProps<{
   width: 1.5em; /* To align text even if some items don't have icons */
   font-size: 1.2em;
   text-align: center;
+}
+
+.contact-icon-item {
+  font-size: 1em;
+}
+
+.contact-brand-icon {
+  display: block;
+  width: 1em;
+  height: 1em;
 }
 </style>

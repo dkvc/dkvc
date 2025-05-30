@@ -25,5 +25,6 @@ export interface ContactItemData {
   name: string
   link: string
   display_type?: 'link' | 'text'
-  iconClass?: string
+  iconType?: string
+  iconContent?: string
 }
