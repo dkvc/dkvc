@@ -9,6 +9,7 @@
     url('./fonts/melon_camp/MelonCamp.otf') format('opentype'),
     url('./fonts/melon_camp/MelonCamp.ttf') format('truetype');
   font-family: 'Melon Camp';
+  font-display: swap;
 }
 
 @font-face {
@@ -19,6 +20,7 @@
     url('./fonts/brittany_charming/BrittanyCharming.woff2') format('woff2'),
     url('./fonts/brittany_charming/BrittanyCharming.otf') format('opentype');
   font-family: 'Brittany Charming';
+  font-display: swap;
 }
 
 /* CSS Variables */
