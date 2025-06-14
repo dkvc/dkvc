@@ -1,0 +1,55 @@
+:root {
+  --bg-linear-gradient-start: hsl(225, 59.26%, 10.59%);
+  --bg-linear-gradient-mid: hsl(225.41, 39.78%, 18.24%);
+  --bg-linear-gradient-end: hsl(213.06, 29.7%, 32.35%);
+  --text-color: hsl(0, 0%, 94.12%);
+  --hover-color: hsl(213.82, 30.05%, 64.12%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(160deg,
+      var(--bg-linear-gradient-start) 0%,
+      var(--bg-linear-gradient-mid) 50%,
+      var(--bg-linear-gradient-end) 100%);
+  min-height: 100vh;
+  color: var(--text-color);
+  font-family:
+    'Segoe UI',
+    -apple-system,
+    BlinkMacSystemFont,
+    Arial,
+    sans-serif;
+  text-align: center;
+}
+
+main * {
+  margin: 0.5rem;
+}
+
+.profile-photo {
+  /* TODO: hsl to base.css */
+  border: 3px solid hsl(0, 0%, 29%);
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 17%);
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: cover;
+}
