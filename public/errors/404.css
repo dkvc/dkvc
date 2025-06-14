@@ -25,10 +25,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(160deg,
-      var(--bg-linear-gradient-start) 0%,
-      var(--bg-linear-gradient-mid) 50%,
-      var(--bg-linear-gradient-end) 100%);
+  background: linear-gradient(
+    160deg,
+    var(--bg-linear-gradient-start) 0%,
+    var(--bg-linear-gradient-mid) 50%,
+    var(--bg-linear-gradient-end) 100%
+  );
   min-height: 100vh;
   color: var(--text-color);
   font-family:
