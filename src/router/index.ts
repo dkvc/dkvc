@@ -22,14 +22,6 @@ const router = createRouter({
       name: 'education',
       component: () => import('../views/EducationView.vue'),
     },
-    {
-      path: '/:pathMatch(.*)*',
-      name: 'NotFound',
-      component: () => import('../views/NotFoundView.vue'),
-      meta: {
-        httpCode: 404,
-      },
-    },
   ],
 })
 
