@@ -24,15 +24,8 @@ function closeNav() {
       </div>
 
       <!-- Nav Menu (Small) -->
-      <button
-        ref="menuToggleRef"
-        class="menu-toggle"
-        :class="{ 'is-active': isNavOpen }"
-        aria-label="Toggle navigation"
-        :aria-expanded="isNavOpen"
-        aria-controls="mainNav"
-        @click="toggleNav"
-      >
+      <button ref="menuToggleRef" class="menu-toggle" :class="{ 'is-active': isNavOpen }" aria-label="Toggle navigation"
+        :aria-expanded="isNavOpen" aria-controls="mainNav" @click="toggleNav">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
@@ -41,30 +34,24 @@ function closeNav() {
       <!-- Nav Menu (Large) -->
       <nav class="main-nav" id="mainNav" :class="{ 'nav-open': isNavOpen }">
         <ul>
-          <li><RouterLink to="/" @click="closeNav">Home</RouterLink></li>
-          <li><RouterLink to="/projects" @click="closeNav">Projects</RouterLink></li>
-          <li><RouterLink to="/education" @click="closeNav">Education</RouterLink></li>
           <li>
-            <a
-              href="/Dhanush_Kovi_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="external-link"
-            >
+            <RouterLink to="/" @click="closeNav">Home</RouterLink>
+          </li>
+          <li>
+            <RouterLink to='/exp' @click="closeNav">Experience</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/projects" @click="closeNav">Projects</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/education" @click="closeNav">Education</RouterLink>
+          </li>
+          <li>
+            <a href="/Dhanush_Kovi_CV.pdf" target="_blank" rel="noopener noreferrer" class="external-link">
               CV
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="external-link-icon"
-                aria-hidden="true"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="external-link-icon" aria-hidden="true">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
                 <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -170,9 +157,11 @@ function closeNav() {
 
 /* Nav Menu (Small) */
 .menu-toggle {
-  display: none; /* Hidden on larger screens */
+  display: none;
+  /* Hidden on larger screens */
   position: relative;
-  z-index: 110; /* Above mobile nav */
+  z-index: 110;
+  /* Above mobile nav */
 
   transition-duration: 0.15s;
   transition-property: opacity, filter;
@@ -195,8 +184,10 @@ function closeNav() {
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px; /* Half of its height */
+  margin-top: -2px;
+  /* Half of its height */
 }
+
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
@@ -209,16 +200,21 @@ function closeNav() {
   width: 30px;
   height: 3px;
 }
+
 .hamburger-inner::before,
 .hamburger-inner::after {
   display: block;
   content: '';
 }
+
 .hamburger-inner::before {
-  top: -10px; /* Spacing from middle line */
+  top: -10px;
+  /* Spacing from middle line */
 }
+
 .hamburger-inner::after {
-  bottom: -10px; /* Spacing from middle line */
+  bottom: -10px;
+  /* Spacing from middle line */
 }
 
 /* Hamburger Animation to X */
@@ -226,8 +222,10 @@ function closeNav() {
   transform: rotate(45deg);
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  background-color: var(--header-text-color); /* Ensure color consistency */
+  background-color: var(--header-text-color);
+  /* Ensure color consistency */
 }
+
 .menu-toggle.is-active .hamburger-inner::before {
   top: 0;
   transform: rotate(-90deg);
@@ -248,6 +246,7 @@ function closeNav() {
 .menu-toggle.is-active .hamburger-inner {
   background-color: transparent;
 }
+
 .menu-toggle.is-active .hamburger-inner::before {
   top: 0;
   transform: rotate(45deg);
@@ -255,6 +254,7 @@ function closeNav() {
     top 0.1s ease-out,
     transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
 }
+
 .menu-toggle.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-45deg);
@@ -277,11 +277,13 @@ function closeNav() {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(-100%); /* we can also do translateX(100%) to slide from right */
+    transform: translateY(-100%);
+    /* we can also do translateX(100%) to slide from right */
     visibility: hidden;
 
     opacity: 0;
-    z-index: 1000; /* Below toggle */
+    z-index: 1000;
+    /* Below toggle */
     backdrop-filter: blur(50px);
     transition:
       opacity 0.5s ease,
@@ -322,7 +324,8 @@ function closeNav() {
   }
 
   .main-nav ul li a {
-    display: block; /* make whole area tappable */
+    display: block;
+    /* make whole area tappable */
     transition:
       background-color 0.2s ease-out,
       color 0.2s ease-out,
@@ -345,8 +348,10 @@ function closeNav() {
       color 0.2s ease-out,
       border-color 0.2s ease-out;
     border: 2px solid transparent;
-    border-radius: 30px; /* pill shape */
-    padding: 0.7em 1.5em; /* pill shape  */
+    border-radius: 30px;
+    /* pill shape */
+    padding: 0.7em 1.5em;
+    /* pill shape  */
     color: var(--mobile-nav-text-color);
     font-weight: 500;
     font-size: 1.1rem;
