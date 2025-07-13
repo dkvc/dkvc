@@ -4,10 +4,9 @@ import { typeColors } from '@/data/timeline-data'
 import type { TimelineItemData } from '@/types'
 import { computed, ref } from 'vue'
 
-interface Props {
+const props = defineProps<{
   item: TimelineItemData
-}
-const props = defineProps<Props>()
+}>()
 
 const timelineItemRef = ref<Element | null>(null)
 const { isIntersecting } = useIntersectionObserver(timelineItemRef)
@@ -95,12 +94,8 @@ const contentWrapperExtraProps = computed(() => {
     <component :is="contentWrapperTag" class="timeline-content" v-bind="contentWrapperExtraProps">
       <div class="timeline-meta-top">
         <div class="project-types-container">
-          <span
-            v-for="typeStr in displayTypes"
-            :key="typeStr"
-            class="project-type-display"
-            :style="{ backgroundColor: getBadgeColor(typeStr) }"
-          >
+          <span v-for="typeStr in displayTypes" :key="typeStr" class="project-type-display"
+            :style="{ backgroundColor: getBadgeColor(typeStr) }">
             {{ typeStr }}
           </span>
         </div>
@@ -109,13 +104,8 @@ const contentWrapperExtraProps = computed(() => {
 
       <h3 class="timeline-title">
         {{ item.project_name || 'Untitled Project' }}
-        <span
-          v-if="item.private"
-          class="material-symbols-outlined timeline-title-icon"
-          title="Private project"
-          :style="{ color: primaryColor }"
-          >encrypted</span
-        >
+        <span v-if="item.private" class="material-symbols-outlined timeline-title-icon" title="Private project"
+          :style="{ color: primaryColor }">encrypted</span>
       </h3>
 
       <p class="timeline-description">{{ item.description || 'No description available.' }}</p>
@@ -165,7 +155,8 @@ const contentWrapperExtraProps = computed(() => {
 .timeline-dot {
   position: absolute;
   top: 1.563rem;
-  z-index: 1; /* above central line */
+  z-index: 1;
+  /* above central line */
   transition: transform 0.3s ease;
   box-shadow: 0 0 0.5rem hsla(0, 0%, 0%, 0.3);
 
@@ -179,11 +170,13 @@ const contentWrapperExtraProps = computed(() => {
 /* apply pulse dot animation when item is visible */
 /* TODO: move hsl/hsla to base.css */
 @keyframes dotPulse {
+
   0%,
   100% {
     transform: scale(1);
     box-shadow: 0 0 0 0 hsla(214, 30%, 64%, 0.3);
   }
+
   50% {
     transform: scale(1.1);
     box-shadow: 0 0 0.375rem 0.625rem hsla(214, 30%, 64%, 0.1);
@@ -224,7 +217,8 @@ const contentWrapperExtraProps = computed(() => {
   box-shadow: 0 0.25rem 0.75rem hsla(0, 0%, 0%, 0.25);
   border-top: 0.25rem solid transparent;
   border-radius: 0.5rem;
-  background-color: hsla(225, 40%, 18%, 0.75); /* Semi transparent dark */
+  background-color: hsla(225, 40%, 18%, 0.75);
+  /* Semi transparent dark */
   padding: 1.25rem 1.563rem;
 }
 
@@ -253,7 +247,8 @@ a.timeline-content {
 .timeline-item.is-visible .timeline-content {
   transform: translateY(0);
   opacity: 1;
-  clip-path: inset(0 0% 0 0%); /* unclip fully */
+  clip-path: inset(0 0% 0 0%);
+  /* unclip fully */
 }
 
 /* Card top border color */
@@ -261,30 +256,39 @@ a.timeline-content {
 .timeline-item.item-type-ai .timeline-content {
   border-top-color: hsl(122.42, 39.44%, 49.22%);
 }
+
 .timeline-item.item-type-reinforcement-learning .timeline-content {
   border-top-color: hsl(222, 90%, 54%);
 }
+
 .timeline-item.item-type-web .timeline-content {
   border-top-color: hsl(322.02, 100%, 51.37%);
 }
+
 .timeline-item.item-type-deep-learning .timeline-content {
   border-top-color: hsl(291.24, 63.72%, 42.16%);
 }
+
 .timeline-item.item-type-optimization .timeline-content {
   border-top-color: hsl(14.39, 100%, 56.67%);
 }
+
 .timeline-item.item-type-default .timeline-content {
   border-top-color: hsl(213.82, 30.05%, 64.12%);
 }
+
 .timeline-item.item-type-misc .timeline-content {
   border-top-color: hsl(213.82, 30.05%, 64.12%);
 }
+
 .timeline-item.item-type-devops .timeline-content {
   border-top-color: hsl(4 100% 36.2%);
 }
+
 .timeline-item.item-type-tool .timeline-content {
   border-top-color: hsl(183 100% 36%);
 }
+
 .timeline-item.item-type-data-viz .timeline-content {
   border-top-color: hsl(165 100% 35.6%);
 }
@@ -292,10 +296,13 @@ a.timeline-content {
 /* Styling for Elements within Card */
 .timeline-meta-top {
   display: flex;
-  flex-wrap: wrap; /* wrap badges if too many */
+  flex-wrap: wrap;
+  /* wrap badges if too many */
   justify-content: space-between;
-  align-items: flex-start; /* top of card */
-  gap: 0.625rem; /* space b/w badges and date */
+  align-items: flex-start;
+  /* top of card */
+  gap: 0.625rem;
+  /* space b/w badges and date */
   margin-bottom: 0.938rem;
 }
 
@@ -303,7 +310,8 @@ a.timeline-content {
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
-  gap: 0.375rem; /* b/w badges */
+  gap: 0.375rem;
+  /* b/w badges */
 }
 
 .project-type-display {
@@ -319,7 +327,8 @@ a.timeline-content {
   font-size: 0.75em;
   letter-spacing: 0.031rem;
   text-transform: uppercase;
-  white-space: nowrap; /* badge text requires no wrapping */
+  white-space: nowrap;
+  /* badge text requires no wrapping */
 }
 
 .timeline-date {
@@ -327,7 +336,8 @@ a.timeline-content {
   color: var(--header-title-and-hover-color);
   font-weight: 500;
   font-size: 0.8em;
-  white-space: nowrap; /* date requires no wrapping */
+  white-space: nowrap;
+  /* date requires no wrapping */
 }
 
 .timeline-title {
@@ -351,7 +361,8 @@ a.timeline-content {
 .timeline-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.375rem 0.5rem; /* row col */
+  gap: 0.375rem 0.5rem;
+  /* row col */
   margin-top: 0.625rem;
 }
 
@@ -359,7 +370,8 @@ a.timeline-content {
   display: inline-block;
   border-radius: 0.25rem;
   /* TODO: hsl/hsla */
-  background-color: hsla(213.82, 30.05%, 64.12%, 0.15); /* Subtle background */
+  background-color: hsla(213.82, 30.05%, 64.12%, 0.15);
+  /* Subtle background */
   padding: 0.25rem 0.625rem;
   color: hsl(210.77, 29.32%, 73.92%);
   font-weight: 500;
@@ -371,6 +383,7 @@ a.timeline-content {
 .timeline-item:nth-child(odd) .timeline-tags {
   justify-content: flex-end;
 }
+
 .timeline-item:nth-child(even) .timeline-tags {
   justify-content: flex-start;
 }
@@ -410,6 +423,7 @@ a.timeline-content {
     padding-right: 1rem !important;
     padding-left: 2.5rem !important;
   }
+
   .timeline-item:nth-child(even) {
     padding-right: 1rem !important;
     padding-left: 2.5rem !important;

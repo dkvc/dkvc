@@ -1,3 +1,13 @@
+export interface ExpItemData {
+  id: string
+  location: string
+  position: string
+  organization: string
+  month_year_start: string
+  month_year_end: string
+  description: string[]
+}
+
 export interface TimelineItemData {
   additional_tags?: string[]
   major?: boolean
