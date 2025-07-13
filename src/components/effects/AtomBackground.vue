@@ -61,7 +61,7 @@ function createAtom(x: number, y: number, vx: number, vy: number): Atom {
   const numElectrons =
     Math.floor(
       Math.random() *
-        (config.value.ELECTRONS_PER_ATOM_MAX - config.value.ELECTRONS_PER_ATOM_MIN + 1),
+      (config.value.ELECTRONS_PER_ATOM_MAX - config.value.ELECTRONS_PER_ATOM_MIN + 1),
     ) + config.value.ELECTRONS_PER_ATOM_MIN
   for (let i = 0; i < numElectrons; i++) {
     let electronColor = getRandomColor()
@@ -73,7 +73,7 @@ function createAtom(x: number, y: number, vx: number, vy: number): Atom {
       orbitRadius:
         config.value.ELECTRON_ORBIT_RADIUS_MIN +
         Math.random() *
-          (config.value.ELECTRON_ORBIT_RADIUS_MAX - config.value.ELECTRON_ORBIT_RADIUS_MIN),
+        (config.value.ELECTRON_ORBIT_RADIUS_MAX - config.value.ELECTRON_ORBIT_RADIUS_MIN),
       angle: Math.random() * Math.PI * 2,
       speed:
         (config.value.ELECTRON_SPEED_MIN +
@@ -212,10 +212,12 @@ onUnmounted(() => {
 <style scoped>
 .atom-background-canvas {
   display: block;
-  position: fixed; /* Cover the entire viewport */
+  position: fixed;
+  /* Cover the entire viewport */
   top: 0;
   left: 0;
-  z-index: -1; /* behind other content */
+  /* behind other content */
+  z-index: -999;
   width: 100%;
   height: 100%;
 }
