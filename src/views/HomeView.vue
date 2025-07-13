@@ -6,6 +6,7 @@ import SkillsSection from '@/components/skills/SkillsSection.vue'
 import MajorProjectsCardItem from '@/components/skills/MajorProjectsCardItem.vue'
 
 import { profile } from '@/data/about-data'
+import ExpCardItem from '@/components/timeline/ExpCardItem.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import { profile } from '@/data/about-data'
       <SectionContainer sectionId="contact">
         <AboutCardItem cardId="about" v-bind="profile" />
         <ContactCardItem cardId="contact" />
+        <ExpCardItem cardId="exp" />
         <SkillsSection />
         <MajorProjectsCardItem cardId="major-projects" />
       </SectionContainer>
@@ -23,7 +25,8 @@ import { profile } from '@/data/about-data'
 
 <style scoped>
 .content-area {
-  position: relative; /* Needed for absolute positioning within */
+  position: relative;
+  /* Needed for absolute positioning within */
   margin: 2.5rem auto 0;
   padding: 0 1.25rem;
   max-width: 900px;
