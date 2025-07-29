@@ -3,6 +3,15 @@ import type { ExpItemData } from '@/types'
 export const expData: ExpItemData[] = [
   {
     id: '1',
+    location: 'Thrivandrum, India',
+    position: 'Associate Software Engineer',
+    organization: 'Experion Technogies',
+    month_year_start: 'July 2025',
+    month_year_end: 'Present',
+    description: [],
+  },
+  {
+    id: '2',
     location: 'Remote',
     position: 'Web Developer Intern',
     organization: 'Genix AI Healthcare',
